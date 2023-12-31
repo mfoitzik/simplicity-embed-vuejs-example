@@ -1,40 +1,27 @@
-# simplicity-embed-vuejs-example
+# Simplicity Embed Vuejs Example (Vuejs + Typescript)
 
-This template should help get you started developing with Vue 3 in Vite.
+This project demonstrates the use of the Simplicity Embed&trade; web component in a Vuejs starter project.
 
-## Recommended IDE Setup
+## Free Test License Key
+To use the Simplicity Embed&trade; web component you first need to obtain a free trial license key or purchase a license. This is available at: <https://www.simplicitywebtools.com>.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Sample Widget
+This example references a vanilla JavaScript widget example that demonstrates 
+<https://github.com/mfoitzik/SimplicityEmbedVanillaJS>
+```
+git clone https://github.com/mfoitzik/SimplicityEmbedVanillaJS
+```
+Open the project in Visual Studio Code and run Live Server or run the code in your dev server of choice. You just need to pay attention to the URL/port it is running on as you will need top reference it later.
 
-## Type Support for `.vue` Imports in TS
+## Instructions
+You can follow the instructions in the Simplicity Embed&trade; documentation found on the <https://www.simplicitywebtools.com> website. These instructions will walk you through starting a Vuejs project from scratch and then integrating the Simplicity Embed&trade; web component.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Alternatively you can just clone the sample repo and check out how it works:
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
+```
+git clone https://github.com/mfoitzik/simplicity-embed-vuejs-example.git
 npm install
+ng serve --open
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+Please note: The <simplicity-embed> component in the App.vue file references the setup file being at: http://localhost:5500/config.json, you may need to change the port numnber depending on what Live Server (or your dev server of choice) assigns as the port number.
